@@ -7,11 +7,11 @@ var ctx = document.getElementById("myDonutChart");
 var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Direct", "Referral", "Social"],
+        labels: ["Carro", "Caminhão", "Carreta", "Ônibus", "Moto"],
         datasets: [{
-            data: [55, 30, 15],
-            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+            data: [505, 320, 45, 32, 122],
+            backgroundColor: ['#0C495A', '#A4CE46', '#36b9cc', '#37cc52', '#e02fa8'],
+            hoverBackgroundColor: ['#0a3a47', '#8db03f', '#2c9faf', '#28a840','#ba278c'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
         }],
     },
@@ -28,7 +28,7 @@ var myPieChart = new Chart(ctx, {
             caretPadding: 10,
         },
         legend: {
-            display: false
+            display: true
         },
         cutoutPercentage: 80,
     },
